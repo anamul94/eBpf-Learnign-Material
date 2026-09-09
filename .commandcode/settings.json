@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(mkdir:*)",
+      "Shell(cd /home/suhayl/Learning/eBPF/book-2-hands-on && bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h 2>/dev/null || echo \"bpftool not available, will create minimal vmlinux.h\")",
+      "Shell(rm -rf /home/suhayl/Learning/eBPF/book-2-hands-on/chapter-* /home/suhayl/Learning/eBPF/book-2-hands-on/Cargo.toml /home/suhayl/Learning/eBPF/book-2-hands-on/vmlinux.h 2>/dev/null; mkdir -p /home/suhayl/Learning/eBPF/book-2-hands-on/chapters)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
